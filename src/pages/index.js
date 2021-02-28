@@ -7,6 +7,7 @@ class Home extends Component {
     render() {
         return (
             <>
+                <Navbar/>
                 <Grid className="h-100 d-flex flex-align-center flex-justify-center">
                     <h1>Hello World!</h1>
                     <p className="text-leader">
