@@ -1,3 +1,0 @@
-User-Agent: *
-Disallow: /README.md
-Sitemap: https://zepintor.github.io/sitemap.xml
