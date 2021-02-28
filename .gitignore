@@ -3,6 +3,7 @@ node_modules
 *~
 dist/
 public/
+yarn.lock
 .module-cache
 *.log*
 .idea
