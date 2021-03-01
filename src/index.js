@@ -10,11 +10,17 @@ class App extends Component {
     render() {
         return (
             <Router>
-                <Navbar />
+                <Navbar/>
                 <Switch>
-                    <Route path="/">
+                    <Route exact path="/">
                         <Home />
                         <Contato />
+                        <Sobre />
+                    </Route>
+                    <Route exact path="/contato">
+                        <Contato />
+                    </Route>
+                    <Route exact path="/sobre">
                         <Sobre />
                     </Route>
                 </Switch>
