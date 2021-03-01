@@ -1,3 +1,6 @@
 .bg-gradient{ 
     background: linear-gradient(to right, #1b262c, #0f4c75);
 }
+.z-top{
+    z-index: 1080 !important; 
+} 

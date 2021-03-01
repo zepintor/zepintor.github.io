@@ -5,8 +5,8 @@ import '../css/navbar.css';
 class Navbar extends Component {
     render() {
         return (
-            <div className="container-fluid bg-gradient pos-fixed fixed-top">
-                <AppBar cls="bg-transparent fg-white container pos-relative">
+            <div className="container-fluid pos-fixed fixed-top fg-white bg-gradient z-top">
+                <AppBar cls="bg-transparent container pos-relative">
                     <AppBarItem>
                         <span className="text-leader">Zé Pintor</span>
                     </AppBarItem>
