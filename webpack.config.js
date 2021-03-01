@@ -17,6 +17,9 @@ const webpackConfig = {
         path: path.resolve(__dirname, 'dist'),
         filename: '[name].bundle.js'
     },
+    devServer: {
+        historyApiFallback: true
+    },    
     optimization: {
         minimize: isProduction,
         minimizer: [
