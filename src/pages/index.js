@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Grid } from 'metro4-react'
 import Reception from '../components/Reception';
 import Card from "../components/Card";
 
@@ -9,7 +8,7 @@ class Home extends Component {
             <>
                 <Reception title="Pinturas em Indaial"
                     subtitle="Orçamento sem compromisso" />
-                <Grid className="h-100 bg-white d-flex flex-align-center flex-justify-center">
+                <div className="container-fluid bg-white d-flex flex-align-center flex-justify-center pt-10 pb-10">
                     <div className="container">
                         <div className="feature-table row">
                             <>
@@ -36,7 +35,7 @@ class Home extends Component {
                             </>
                         </div>
                     </div>
-                </Grid>
+                </div>
             </>
         )
     }
