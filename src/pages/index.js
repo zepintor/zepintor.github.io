@@ -15,26 +15,26 @@ class Home extends Component {
                     <div className="container">
                         <div className="feature-table row">
                             <>
-                            <Card title="Capricho"
-                            subtitle="Serviços com bom acabamento"
-                            button_caption="Mostre-me"
-                            background="blue"
-                            icon="mif-hammer"
-                            button_background="info"/>
+                                <Card title="Capricho"
+                                    subtitle="Serviços com bom acabamento"
+                                    button_caption="Mostre-me"
+                                    background="blue"
+                                    icon="mif-hammer"
+                                    button_background="info" />
 
-                            <Card title="Visão"
-                            subtitle="Boas ideias para cores"
-                            button_caption="Quero ver"
-                            background="steel"
-                            icon="mif-eye"
-                            button_background="secondary"/>
+                                <Card title="Visão"
+                                    subtitle="Boas ideias para cores"
+                                    button_caption="Quero ver"
+                                    background="steel"
+                                    icon="mif-eye"
+                                    button_background="secondary" />
 
-                            <Card title="Nota fiscal"
-                            subtitle="Para empresas"
-                            button_caption="Como assim?"
-                            background="amber"
-                            icon="mif-barcode"
-                            button_background="yellow"/>
+                                <Card title="Nota fiscal"
+                                    subtitle="Para empresas"
+                                    button_caption="Como assim?"
+                                    background="amber"
+                                    icon="mif-barcode"
+                                    button_background="yellow" />
                             </>
                         </div>
                     </div>
