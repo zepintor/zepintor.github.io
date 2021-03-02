@@ -18,10 +18,8 @@ class Madeiras extends Component {
     render() {
         return (
             <>
-                <Grid className="h-100 d-flex flex-align-center flex-justify-center">
-                    <Reception title="Madeira"
+                <Reception title="Madeira"
                         subtitle="Pinturas com verniz e osmocolor" />
-                </Grid>
                 <div className="bg-white text-center text-leader pt-10 pb-10">
                     <Grid class="container">
                         <Row>

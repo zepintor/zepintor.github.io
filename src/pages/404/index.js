@@ -7,10 +7,8 @@ class NotFound extends Component {
     subtitle = "A página que você visitou não existe, volte ao início ou contate o administrador."
     render() {
         return (
-            <Grid className="h-100 d-flex flex-align-center flex-justify-center">
-                <Reception title={this.title}
-                    subtitle={this.subtitle} />
-            </Grid>
+            <Reception title={this.title}
+                subtitle={this.subtitle} />
         )
     }
 }

@@ -7,13 +7,11 @@ class Contato extends Component {
     render() {
         return (
             <>
-            <Grid className="h-100 d-flex flex-align-center flex-justify-center">
                 <Reception title="Contato"
-                subtitle="Dúvidas? Deixe uma mensagem."/>
-            </Grid>
-            <div className="h-75 bg-white d-flex flex-align-center flex-justify-center">
-                <Formulary/>
-            </div>
+                    subtitle="Dúvidas? Deixe uma mensagem." />
+                <div className="h-75 bg-white d-flex flex-align-center flex-justify-center">
+                    <Formulary />
+                </div>
             </>
         )
     }

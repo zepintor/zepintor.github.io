@@ -7,10 +7,8 @@ class Home extends Component {
     render() {
         return (
             <>
-                <Grid className="h-100 d-flex flex-align-center flex-justify-center">
-                    <Reception title="Pinturas em Indaial"
-                        subtitle="Orçamento sem compromisso" />
-                </Grid>
+                <Reception title="Pinturas em Indaial"
+                    subtitle="Orçamento sem compromisso" />
                 <Grid className="h-100 bg-white d-flex flex-align-center flex-justify-center">
                     <div className="container">
                         <div className="feature-table row">

@@ -7,15 +7,13 @@ class Sobre extends Component {
     render() {
         return (
             <>
-                <Grid className="h-100 d-flex flex-align-center flex-justify-center">
-                    <Reception title="Sobre Mim"
-                        subtitle />
-                </Grid>
+                <Reception title="Sobre Mim"
+                    subtitle />
                 <div className="bg-white">
-                    <div className="text-center" style={{"bottom":"130px"}}>
+                    <div className="text-center" style={{ "bottom": "130px" }}>
                         <img src={Profile} className="mw-25-md drop-shadow img-thumbnail mx-auto"
-                        alt="Homem segurando um saxofone"
-                        loading="lazy" />
+                            alt="Homem segurando um saxofone"
+                            loading="lazy" />
                         <blockquote>
                             <p className="text-leader">A música é a rainha das artes, a pintura é a princesa.</p>
                             <small>José Augusto de Campos</small>
