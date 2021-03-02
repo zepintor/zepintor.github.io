@@ -11,9 +11,10 @@ class Sobre extends Component {
                     subtitle />
                 <div className="bg-white">
                     <div className="text-center" style={{ "bottom": "130px" }}>
-                        <img src={Profile} className="mw-25-md drop-shadow img-thumbnail mx-auto"
-                            alt="Homem segurando um saxofone"
-                            loading="lazy" />
+                        <div className="mw-50-sm mw-25-md mw-25-lg mw-75 mx-auto">
+                            <img src={Profile} className="drop-shadow img-thumbnail"
+                                alt="Homem segurando um saxofone" />
+                        </div>
                         <blockquote>
                             <p className="text-leader">A música é a rainha das artes, a pintura é a princesa.</p>
                             <small>José Augusto de Campos</small>
