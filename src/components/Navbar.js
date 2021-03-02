@@ -23,9 +23,21 @@ class Navbar extends Component {
                         <Link to="/sobre">
                             <AppBarItem>Sobre</AppBarItem>
                         </Link>
+                        <Link to="/madeiras">
+                            <AppBarItem>Madeiras</AppBarItem>
+                        </Link>
+                        <Link to="/pinturas">
+                            <AppBarItem>Pinturas</AppBarItem>
+                        </Link>
+                        <Link to="/telhado">
+                            <AppBarItem>Telhado</AppBarItem>
+                        </Link>
+                        <Link to="/gesso">
+                            <AppBarItem>Gesso</AppBarItem>
+                        </Link>
                     </AppBarMenu>
                 </AppBar>
-            </div>
+            </div >
         )
     }
 }
