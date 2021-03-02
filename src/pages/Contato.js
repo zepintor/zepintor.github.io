@@ -11,9 +11,9 @@ class Contato extends Component {
                 <Reception title="Contato"
                 subtitle="Dúvidas? Deixe uma mensagem."/>
             </Grid>
-            <Grid className="h-75 bg-white d-flex flex-align-center flex-justify-center">
+            <div className="h-75 bg-white d-flex flex-align-center flex-justify-center">
                 <Formulary/>
-            </Grid>
+            </div>
             </>
         )
     }
