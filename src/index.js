@@ -4,9 +4,9 @@ import Home from './pages/index';
 import Navbar from './components/Navbar';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import './css/body.css';
-import Contato from './pages/Contato';
-import Sobre from './pages/Sobre';
-import NotFound from './pages/404';
+import Contato from './pages/contato/';
+import Sobre from './pages/sobre/';
+import NotFound from './pages/404/';
 import Footer from './components/Footer';
 import WhatsAppButton from './components/WhatsAppButton';
 
