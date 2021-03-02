@@ -6,11 +6,15 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import './css/body.css';
 import Contato from './pages/Contato';
 import Sobre from './pages/Sobre';
+import NotFound from './pages/404';
+import Footer from './components/Footer';
+import WhatsAppButton from './components/WhatsAppButton';
+
 class App extends Component {
     render() {
         return (
             <Router>
-                <Navbar/>
+                <Navbar />
                 <Switch>
                     <Route exact path="/">
                         <Home />
@@ -23,10 +27,15 @@ class App extends Component {
                     <Route exact path="/sobre">
                         <Sobre />
                     </Route>
+                    <Route exact path="*">
+                        <NotFound />
+                    </Route>
                 </Switch>
+                <Footer />
+                <WhatsAppButton/>
             </Router>
         )
     }
 }
 
-ReactDOM.render( <App />, document.querySelector( '#root' ) );
+ReactDOM.render(<App />, document.querySelector('#root'));
