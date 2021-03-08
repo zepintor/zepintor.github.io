@@ -13,7 +13,7 @@
   "homepage": "https://zepintor.github.io/",
   "scripts": {
     "build": "cross-env NODE_ENV=production webpack",
-    "dev": "webpack-dev-server --open",
+    "dev": "webpack-dev-server --open --host 0.0.0.0",
     "predeploy": "yarn run build",
     "deploy": "gh-pages -d build"
   },
@@ -35,6 +35,7 @@
     "cross-env": "^5.2.0",
     "css-loader": "^3.0.0",
     "eslint": "^4.12.1",
+    "eslint-plugin-react": "^7.22.0",
     "file-loader": "^4.0.0",
     "html-webpack-plugin": "^3.2.0",
     "install-peers": "^1.0.3",
