@@ -52,12 +52,14 @@ export default class Formulary extends Component {
 
     render(){
         return(
-            <form onSubmit={this.handleSubmit}>
+            <form onSubmit={this.handleSubmit}
+                className="mw-75-md pb-6 pt-6 mx-auto">
                 <Input name="name"
                     prepend="Nome"
                     type="text"
                     value={this.state.name}
                     onChange={e => this.change(e)}
+                    cls="mt-4"
                     required
                 />
                 <Input name="email"
@@ -65,6 +67,7 @@ export default class Formulary extends Component {
                     type="email"
                     value={this.state.email}
                     onChange={e => this.change(e)}
+                    cls="mt-4"
                 />
                 <Input name="telephone"
                     placeholder="(__) _____-____"
@@ -73,6 +76,7 @@ export default class Formulary extends Component {
                     value={this.state.telephone}
                     onKeyPress={e => this.formatTelephone(e)}
                     onChange={e => this.change(e)}
+                    cls="mt-4 mb-4"
                     required
                 />
                 <Textarea name="message"
@@ -82,7 +86,7 @@ export default class Formulary extends Component {
                     required
                 />
                 <Button title="Enviar"
-                    cls="dark large"
+                    cls="dark large mt-3"
                     type="submit"
                 />
             </form>
