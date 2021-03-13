@@ -8,7 +8,7 @@ class Navbar extends Component {
         return (
             <div className="container-fluid pos-fixed fixed-top fg-white bg-gradient z-top">
                 <AppBar cls="bg-transparent container pos-relative" hamburgerTheme="white"
-                expandPoint="lg">
+                    expandPoint="lg">
                     <Link to="/" className="fg-white">
                         <AppBarItem isBrand cls="mr-auto">
                             <span className="text-leader text-cap">Zé Pintor</span>
