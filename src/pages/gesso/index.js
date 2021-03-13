@@ -17,7 +17,7 @@ class Gesso extends Component {
                 <Reception title="Gesso"
                         subtitle="Trabalhos com gesso e acabamento fino" />
                 <div className="bg-white text-center text-leader pt-10 pb-10">
-                    <Grid class="container">
+                    <Grid cls="container mx-auto">
                         <Row>
                             <Cell className="cell-md-6">
                                 <div className="img-container drop-shadow">

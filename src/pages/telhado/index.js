@@ -15,7 +15,7 @@ class Telhado extends Component {
                 <Reception title="Telhado"
                         subtitle="Lavação e pinturas de telhado" />
                 <div className="bg-white text-center text-leader pt-10 pb-10">
-                    <Grid class="container">
+                    <Grid cls="container mx-auto">
                         <Row>
                             <Cell className="cell-md-6">
                                 <div className="img-container drop-shadow">

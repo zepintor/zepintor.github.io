@@ -18,12 +18,11 @@ class Pinturas extends Component {
                 <Reception title="Pinturas"
                         subtitle="As cores mais atraentes" />
                 <div className="bg-white text-center text-leader pt-10 pb-10">
-                    <Grid class="container">
+                    <Grid cls="container mx-auto">
                         <Row>
                             <Cell className="cell-md-6">
                                 <div className="img-container drop-shadow">
                                     <img src={casa_amarela3}></img>
-                                    <span>Detalhes em amarelo na casa</span>
                                 </div>
                             </Cell>
                             <Cell className="cell-md-6">
@@ -36,13 +35,13 @@ class Pinturas extends Component {
                             <Cell className="cell-md-6">
                                 <div className="img-container drop-shadow">
                                     <img src={casa_amarela2}></img>
-                                    <span>Pintura feita no portão</span>
+                                    <span>Deck de madeira pintado com Osmocolor</span>
                                 </div>
                             </Cell>
                             <Cell className="cell-md-6">
                                 <div className="img-container drop-shadow">
                                     <img src={casa_amarela0}></img>
-                                    <span>Corrimões da sacada</span>
+                                    <span>Além do deck, os móveis também foram pintados.</span>
                                 </div>
                             </Cell>
                         </Row>
@@ -50,13 +49,13 @@ class Pinturas extends Component {
                             <Cell className="cell-md-6">
                                 <div className="img-container drop-shadow">
                                     <img src={salao_antes}></img>
-                                    <span>Salão da barbearia antes do serviço</span>
+                                    <span>Teto antes da lavação e pintura.</span>
                                 </div>
                             </Cell>
                             <Cell className="cell-md-6">
                                 <div className="img-container drop-shadow">
                                     <img src={salao_depois}></img>
-                                    <span>Salão após a pintura. Cores escolhidas pela arquiteta</span>
+                                    <span>Teto após a lavação e pintura</span>
                                 </div>
                             </Cell>
                         </Row>
@@ -64,13 +63,12 @@ class Pinturas extends Component {
                             <Cell className="cell-md-6">
                                 <div className="img-container drop-shadow">
                                     <img src={predio0}></img>
-                                    <span>Prédio em início de obra</span>
+                                    <span>Renovação do verniz em móveis de madeira.</span>
                                 </div>
                             </Cell>
                             <Cell className="cell-md-6">
                                 <div className="img-container drop-shadow">
                                     <img src={predio1}></img>
-                                    <span>Prédio após a pintura</span>
                                 </div>
                             </Cell>
                         </Row>
@@ -78,12 +76,9 @@ class Pinturas extends Component {
                             <Cell className="cell-md-6">
                                 <div className="img-container drop-shadow">
                                     <img src={impermeabilizacao_tijolos}></img>
-                                    <span>Impermeabilização de tijolos</span>
                                 </div>
                             </Cell>
                             <Cell className="cell-md-6">
-                                <div className="img-container drop-shadow">
-                                </div>
                             </Cell>
                         </Row>
                     </Grid>
