@@ -1,31 +1,91 @@
-import React, { Component } from 'react';
-import { Input, Textarea, Button } from "metro4-react";
+import React, {Component} from "react";
+import { Button, Input, Textarea } from "metro4-react";
 
-class Formulary extends Component {
-    render() {
-        return (
-            <form className="w-75-md text-center" method="POST" action="/formulario">
-                <Input prepend="Nome"
-                cls="mt-3 mb-3"
-                errorMessage="Eu preciso saber o seu nome..."
-                required/>
-                <Input prepend="E-mail"
-                cls="mt-3 mb-3"
-                type="email"/>
-                <Input prepend="Telefone"
-                cls="mt-3 mb-3"
-                placeholder="(__) _____-____"
-                type="tel"
-                errorMessage="Como vou entrar em contato contigo?"
-                required/>
-                <Textarea placeholder="Sua mensagem..."
-                cls="mt-3 mb-3"
-                errorMessage="Faltou você escrever a mensagem..."
-                required/>
-                <Button type="submit" title="Enviar" cls="dark large mt-3 mr-2"/>
-                <Button type="reset" title="Limpar" cls="large mt-3 ml-2"/>
+export default class Formulary2 extends Component {
+    state = {
+        name: '',
+        email: '',
+        telephone: '',
+        message: ''
+    };
+
+    change = (e) => {
+        this.setState({
+            [e.target.name]: e.target.value
+        });
+    };
+
+    formatTelephone = (e) => {
+        var tel = e.target.value;
+        if (tel.length === 0){
+            tel = '(' + tel;
+        } else if (tel.length === 3){
+            tel = tel + ') ';
+        } else if (tel.length === 9){
+            if (tel["5"] != "9"){
+                tel = tel + "-";
+                e.target.maxLength = 14;
+            }
+        } else if (tel.length === 10){
+            if (tel["5"] == "9"){
+                tel = tel + "-";
+                e.target.maxLength = 15;
+            }
+        }
+        this.setState({
+            [e.target.name]: tel
+        });
+    }
+
+    handleSubmit = (e) => {
+        e.preventDefault();
+        var data = new FormData(e.target);
+        var action = 'https://formspree.io/f/mdozalpk'
+        fetch(action, {
+            method: 'POST',
+            body: data,
+            headers: {
+                'Accept': 'application/json'
+            }
+        });
+    }
+
+    render(){
+        return(
+            <form onSubmit={this.handleSubmit}>
+                <Input name="name"
+                    prepend="Nome"
+                    type="text"
+                    value={this.state.name}
+                    onChange={e => this.change(e)}
+                    required
+                />
+                <Input name="email"
+                    prepend="E-mail"
+                    type="email"
+                    value={this.state.email}
+                    onChange={e => this.change(e)}
+                />
+                <Input name="telephone"
+                    placeholder="(__) _____-____"
+                    type="tel"
+                    prepend="Telefone"
+                    value={this.state.telephone}
+                    onKeyPress={e => this.formatTelephone(e)}
+                    onChange={e => this.change(e)}
+                    required
+                />
+                <Textarea name="message"
+                    placeholder="Escreva sua mensagem..."
+                    value={this.state.message}
+                    onChange={e => this.change(e)}
+                    required
+                />
+                <Button title="Enviar"
+                    cls="dark large"
+                    type="submit"
+                />
             </form>
         );
     }
 }
-export default Formulary;
