@@ -44,7 +44,7 @@ const webpackConfig = {
     module: {
         rules: [
             {
-                test: /\.(png|woff|woff2|eot|ttf|svg|webp)$/,
+                test: /\.(png|woff|woff2|eot|ttf|svg|webp|jpeg)$/,
                 loader: 'url-loader?limit=100000'
             },
             {
