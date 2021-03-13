@@ -50,6 +50,15 @@ export default class Formulary extends Component {
         });
     }
 
+    resetForm = () => {
+        this.setState({
+            name: '',
+            email: '',
+            telephone: '',
+            message: ''
+        });
+    }
+
     render(){
         return(
             <form onSubmit={this.handleSubmit}
@@ -86,8 +95,13 @@ export default class Formulary extends Component {
                     required
                 />
                 <Button title="Enviar"
-                    cls="dark large mt-3"
+                    cls="dark large mt-3 mr-1"
                     type="submit"
+                />
+                <Button title="Limpar"
+                    cls="large mt-3 ml-1"
+                    type="reset"
+                    onClick={this.resetForm}
                 />
             </form>
         );
