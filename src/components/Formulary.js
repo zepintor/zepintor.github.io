@@ -1,7 +1,7 @@
 import React, {Component} from "react";
 import { Button, Input, Textarea } from "metro4-react";
 
-export default class Formulary2 extends Component {
+export default class Formulary extends Component {
     state = {
         name: '',
         email: '',
