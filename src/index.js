@@ -10,6 +10,9 @@ import NotFound from './pages/404/';
 import Footer from './components/Footer';
 import WhatsAppButton from './components/WhatsAppButton';
 import Madeiras from './pages/madeiras';
+import Pinturas from './pages/pinturas';
+import Telhado from './pages/telhado';
+import Gesso from './pages/gesso';
 
 class App extends Component {
     render() {
@@ -32,13 +35,13 @@ class App extends Component {
                         <Madeiras/>
                     </Route>
                     <Route exact path="/pinturas">
-
+                        <Pinturas/>
                     </Route>
                     <Route exact path="/telhado">
-
+                        <Telhado />
                     </Route>
                     <Route exact path="/gesso">
-
+                        <Gesso />
                     </Route>
                     <Route exact path="*">
                         <NotFound />
@@ -47,7 +50,7 @@ class App extends Component {
                 <Footer />
                 <WhatsAppButton/>
             </Router>
-        )
+        );
     }
 }
 
