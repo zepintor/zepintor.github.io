@@ -21,7 +21,7 @@ class Madeiras extends Component {
                 <Reception title="Madeira"
                         subtitle="Pinturas com verniz e osmocolor" />
                 <div className="bg-white text-center text-leader pt-10 pb-10">
-                    <Grid class="container">
+                    <Grid className="container">
                         <Row>
                             <Cell className="cell-md-6">
                                 <div className="img-container drop-shadow">
