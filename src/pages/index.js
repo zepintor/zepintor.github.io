@@ -17,21 +17,27 @@ class Home extends Component {
                                     button_caption="Mostre-me"
                                     background="blue"
                                     icon="mif-hammer"
-                                    button_background="info" />
+                                    button_background="info"
+                                    linkTo="/madeiras"
+                                />
 
                                 <Card title="Visão"
                                     subtitle="Boas ideias para cores"
                                     button_caption="Quero ver"
                                     background="steel"
                                     icon="mif-eye"
-                                    button_background="secondary" />
+                                    button_background="secondary"
+                                    linkTo="/pinturas"
+                                />
 
                                 <Card title="Nota fiscal"
                                     subtitle="Para empresas"
                                     button_caption="Como assim?"
                                     background="amber"
                                     icon="mif-barcode"
-                                    button_background="yellow" />
+                                    button_background="yellow"
+                                    linkTo="/contato"
+                                />
                             </>
                         </div>
                     </div>

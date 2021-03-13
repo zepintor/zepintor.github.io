@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 class Card extends Component {
     render() {
@@ -12,7 +13,10 @@ class Card extends Component {
                         </div><span className="text-leader2">{this.props.subtitle}</span>
                     </div>
                     <div className="info-panel-footer">
-                        <a href="javascript:loadRandomPage();" className={`button large ${this.props.button_background}`}>{this.props.button_caption}</a>
+                        <Link to={this.props.linkTo}
+                            className={`button large ${this.props.button_background}`}>
+                            {this.props.button_caption}
+                        </Link>
                     </div>
                 </div>
             </div>
