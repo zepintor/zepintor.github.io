@@ -48,6 +48,9 @@ export default class Formulary extends Component {
                 'Accept': 'application/json'
             }
         });
+        alert('Sua mensagem foi enviada com sucesso, assim que eu puder retornarei o mais breve possível');
+        window.scrollTo(0, 0);
+        this.resetForm();
     }
 
     resetForm = () => {
