@@ -15,7 +15,7 @@
     "build": "cross-env NODE_ENV=production webpack",
     "dev": "webpack-dev-server --open --host 0.0.0.0",
     "predeploy": "yarn run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d dist"
   },
   "author": "Cézar Augusto <cezargaiteiro@protonmail.com>",
   "license": "MIT",
